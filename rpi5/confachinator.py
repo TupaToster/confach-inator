@@ -90,7 +90,7 @@ async def main():
         # Counter for messages
         message_count = 0
 
-        while message_count < 3:
+        while message_count < 10:
             message = await fetch_random_message(client, channel)
             
             if message:
