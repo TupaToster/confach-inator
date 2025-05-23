@@ -58,6 +58,7 @@ def clean_text(text):
     # Clean up any extra spaces
     result = " ".join(result.split())
 
+    result = result.rsplit (' ', 1)[0]
     return result
 
 async def fetch_random_message(client, channel, max_messages=1000):
