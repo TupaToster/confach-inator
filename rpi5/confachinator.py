@@ -2,12 +2,10 @@
 import asyncio
 from telethon import TelegramClient
 import re
-import pyttsx3
 from gtts import gTTS
 import os
 import random
 import RPi.GPIO as GPIO
-import time
 
 GPIO.setmode(GPIO.BOARD)  # Use physical pin numbering
 LDR_PIN = 15  # Example: physical pin 15 (GPIO 22)
